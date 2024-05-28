@@ -1,0 +1,64 @@
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #2c2c2c;
+    --text-color-dark: #f1f1f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#modeToggle {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#products {
+    padding: 2rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode header {
+    background-color: #0056b3;
+}
+
+.dark-mode footer {
+    background-color: #3a3a3a;
+}
